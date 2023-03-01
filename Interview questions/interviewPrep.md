@@ -27,7 +27,7 @@
 - let can be reassigned a new value, but the variable cannot be redeclared in the same scope.
 - const, on the other hand, cannot be reassigned a new value and the variable cannot be redeclared in the same scope.
 
-## 6) Explain higher order functions.
+## 6) Explain higher order functions.
 
 - In JavaScript, a higher-order function is a function that either takes one or more functions as arguments or returns a function as its result. This means that higher-order functions can abstract over actions, behaviors, or computations, allowing us to write more generic and reusable code.
 
@@ -91,7 +91,7 @@
 
 - In this example, the func3 function is called first, which then calls func2, which in turn calls func1. Each time a function is called, a new frame is added to the top of the call stack. When a function returns, its frame is removed from the top of the call stack. The output of this program will be: func1, func2, func3
 
-## 9) What are JavaScript promises and name a usecase.
+## 9) What are JavaScript promises and name a usecase.
 
 - Promises have three states: pending, fulfilled, and rejected. When a promise is created, it is in the pending state. Once the asynchronous operation is completed successfully, the promise is fulfilled and moves to the fulfilled state. If the asynchronous operation fails, the promise is rejected and moves to the rejected state.
 - A use case for promises is when making HTTP requests. For example, when you want to fetch data from a server using an HTTP request, you can use the fetch API to make the request and return a promise. You can then use the then method to handle the response and the catch method to handle any errors that occur. This makes it easy to write asynchronous code that is easy to read and maintain.
@@ -131,3 +131,35 @@
         const myFunction = function() {
           console.log('Hello, world!');
         };
+
+## 11)
+
+- Closures are a fundamental concept in JavaScript that allow functions to access and use variables that are declared outside of their own scope. A closure is created when a function is defined inside another function, and the inner function has access to the outer function's variables.
+
+        function privateCounter() {
+          let count = 1;
+
+          return {
+            increment: (val = 1) => {
+              count += val
+            },
+            getValue: () => {
+              return count
+            }
+          }
+        }
+
+        const counter = privateCounter();
+        console.log(counter.getValue());
+        counter.increment();
+        console.log(counter.getValue());
+
+- Another example
+
+        const privateSecret = () => {
+          const secret = "I am super secret"
+          return () => secret
+        }
+
+        const getSecret = privateSecret()
+        console.log(getSecret()) // "I am super secret"
