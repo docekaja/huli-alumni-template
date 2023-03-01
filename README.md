@@ -10,10 +10,10 @@ Email: docekal26@gmail.com
 
 ## &rarr; [Coding projects](https://github.com/green-fox-academy/definitions/tree/master/project-phase/huli/coding-projects)
 
-{project-name}: {link-to-repo}
-
 ## &rarr; [Interview prep](https://github.com/green-fox-academy/teaching-materials/tree/master/interview)
 
 Codewars: https://www.codewars.com/users/docekaja
+
+[Tech questions]()
 
 ## &rarr; [Interview tests](https://github.com/green-fox-academy/teaching-materials/tree/master/project-phase/tech-interview-tests)
