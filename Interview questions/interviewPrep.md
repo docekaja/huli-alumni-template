@@ -96,7 +96,7 @@
 - Promises have three states: pending, fulfilled, and rejected. When a promise is created, it is in the pending state. Once the asynchronous operation is completed successfully, the promise is fulfilled and moves to the fulfilled state. If the asynchronous operation fails, the promise is rejected and moves to the rejected state.
 - A use case for promises is when making HTTP requests. For example, when you want to fetch data from a server using an HTTP request, you can use the fetch API to make the request and return a promise. You can then use the then method to handle the response and the catch method to handle any errors that occur. This makes it easy to write asynchronous code that is easy to read and maintain.
 
-## What is hoisting
+## 10) What is hoisting
 
 - Hoisting is a JavaScript mechanism that allows variable and function declarations to be moved to the top of their respective scopes before code execution. This means that you can use a variable or a function before it has been declared in your code. However, it is important to note that only the declarations are hoisted, not the initializations. This means that even though you can use a variable or a function before it has been declared, its value will be undefined until it has been initialized.
 

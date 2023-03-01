@@ -14,6 +14,6 @@ Email: docekal26@gmail.com
 
 Codewars: https://www.codewars.com/users/docekaja
 
-[Tech questions]()
+[Tech questions](https://github.com/docekaja/huli-alumni-template/blob/master/Interview%20questions/interviewPrep.md)
 
 ## &rarr; [Interview tests](https://github.com/green-fox-academy/teaching-materials/tree/master/project-phase/tech-interview-tests)
